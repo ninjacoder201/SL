@@ -1,12 +1,63 @@
-# Getting Started with Create React App
+# Speedy Liquor - Premium Spirits & Wine E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive e-commerce website for premium spirits, wines, and craft beers, built with React and inspired by Total Wine & More.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 🎯 Core Features
+- **Modern Design**: Clean, professional interface with premium feel
+- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
+- **Product Catalog**: Comprehensive product listings with detailed information
+- **Category Navigation**: Easy browsing by wine, spirits, beer, champagne, and sake
+- **Shopping Cart**: Full cart functionality with quantity management
+- **Product Search**: Advanced search and filtering capabilities
+- **Product Details**: Detailed product pages with images and specifications
 
-### `npm start`
+### 🛒 E-commerce Features
+- Product grid with cards showing price, ratings, and quick actions
+- Wishlist functionality
+- Quantity selectors and add-to-cart buttons
+- Shopping cart with order summary
+- Price calculations with shipping and tax
+- Stock status indicators
+- Recommended products
+
+### 🎨 Design Features
+- **Premium Color Scheme**: Deep blues, gold accents, and clean whites
+- **Typography**: Modern font stack with Inter and Playfair Display
+- **Animations**: Smooth transitions and hover effects
+- **Icons**: Emoji-based icons for better accessibility
+- **Gradients**: Subtle gradients for visual depth
+- **Shadows**: Layered shadows for card depth
+
+## Technology Stack
+
+- **Frontend**: React 18+ with functional components and hooks
+- **Routing**: React Router DOM for navigation
+- **Styling**: Pure CSS with CSS Grid and Flexbox
+- **API**: Axios for HTTP requests (with mock data fallback)
+- **Build Tool**: Create React App
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd speedy-liquor-website
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

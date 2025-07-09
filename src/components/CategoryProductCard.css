@@ -1,0 +1,340 @@
+/* Category Product Card - Exact Total Wine Style */
+.category-product-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: none;
+  border-bottom: none;
+}
+
+.category-product-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  border-color: #007bff;
+}
+
+.category-product-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.category-product-image {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.category-product-image img {
+  max-width: 120px;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.category-product-info {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.4;
+  min-height: 2.8em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.category-product-size {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+  font-weight: 500;
+}
+
+.category-product-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+}
+
+.category-stars {
+  color: #fbbf24;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}
+
+.category-rating-count {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.category-product-price {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.category-original-price {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+.category-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.category-sign-in-discount {
+  font-size: 0.8rem;
+  color: #dc2626;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.category-availability {
+  padding: 12px 16px;
+  background: #f9fafb;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.category-availability-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+.category-availability-item:last-child {
+  margin-bottom: 0;
+}
+
+.availability-text {
+  color: #059669;
+  font-weight: 500;
+}
+
+.availability-status {
+  color: #059669;
+  font-weight: 600;
+}
+
+.category-product-actions {
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.category-add-to-cart-btn {
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.category-add-to-cart-btn:hover {
+  background: #047857;
+}
+
+.category-wishlist-btn {
+  background: white;
+  border: 1px solid #d1d5db;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+}
+
+.category-wishlist-btn:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.category-more-like {
+  padding: 0 16px 16px 16px;
+}
+
+.category-more-like-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  font-weight: 500;
+}
+
+.category-more-like-btn:hover {
+  color: #1d4ed8;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category-product-image {
+    height: 160px;
+    padding: 16px;
+  }
+  
+  .category-product-image img {
+    max-width: 100px;
+    max-height: 130px;
+  }
+  
+  .category-product-info {
+    padding: 12px;
+  }
+  
+  .category-product-name {
+    font-size: 0.875rem;
+    min-height: 2.4em;
+  }
+  
+  .category-product-size {
+    font-size: 0.8rem;
+  }
+  
+  .category-stars {
+    font-size: 0.8rem;
+  }
+  
+  .category-rating-count {
+    font-size: 0.75rem;
+  }
+  
+  .category-price {
+    font-size: 1.1rem;
+  }
+  
+  .category-availability {
+    padding: 10px 12px;
+  }
+  
+  .category-product-actions {
+    padding: 12px;
+  }
+  
+  .category-add-to-cart-btn {
+    padding: 10px 16px;
+    font-size: 0.8rem;
+  }
+  
+  .category-wishlist-btn {
+    padding: 8px 10px;
+    min-width: 38px;
+  }
+  
+  .category-more-like {
+    padding: 0 12px 12px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-product-image {
+    height: 140px;
+    padding: 12px;
+  }
+  
+  .category-product-image img {
+    max-width: 80px;
+    max-height: 110px;
+  }
+  
+  .category-product-info {
+    padding: 10px;
+  }
+  
+  .category-product-name {
+    font-size: 0.8rem;
+    min-height: 2.2em;
+  }
+  
+  .category-product-size {
+    font-size: 0.75rem;
+  }
+  
+  .category-price {
+    font-size: 1rem;
+  }
+  
+  .category-availability {
+    padding: 8px 10px;
+  }
+  
+  .category-availability-item {
+    font-size: 0.8rem;
+  }
+  
+  .category-product-actions {
+    padding: 10px;
+  }
+  
+  .category-add-to-cart-btn {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+  }
+  
+  .category-wishlist-btn {
+    padding: 6px 8px;
+    min-width: 34px;
+    font-size: 1rem;
+  }
+  
+  .category-more-like {
+    padding: 0 10px 10px 10px;
+  }
+  
+  .category-more-like-btn {
+    font-size: 0.8rem;
+  }
+}
