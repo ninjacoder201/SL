@@ -142,6 +142,11 @@ secrets.json
 .vercel
 .netlify
 
+# Vercel
+.vercel/*
+.env*.local
+.env.production
+
 # Local development
 .local
 .cache

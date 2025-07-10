@@ -1,0 +1,334 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "address": "123 Main St",
+      "city": "New York",
+      "zipcode": "10001",
+      "avatar": "https://i.pravatar.cc/300?img=1",
+      "birthday": "1985-03-15",
+      "first_seen": "2023-01-15T10:30:00Z",
+      "last_seen": "2024-01-10T14:22:00Z",
+      "has_ordered": true,
+      "latest_purchase": "2024-01-10T14:22:00Z",
+      "has_newsletter": true,
+      "groups": ["VIP"],
+      "nb_commands": 12,
+      "total_spent": 1250.50
+    },
+    {
+      "id": 2,
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "address": "456 Oak Ave",
+      "city": "Los Angeles",
+      "zipcode": "90210",
+      "avatar": "https://i.pravatar.cc/300?img=2",
+      "birthday": "1992-07-22",
+      "first_seen": "2023-02-20T09:15:00Z",
+      "last_seen": "2024-01-08T16:45:00Z",
+      "has_ordered": true,
+      "latest_purchase": "2024-01-08T16:45:00Z",
+      "has_newsletter": false,
+      "groups": ["Regular"],
+      "nb_commands": 8,
+      "total_spent": 890.25
+    },
+    {
+      "id": 3,
+      "first_name": "Mike",
+      "last_name": "Johnson",
+      "email": "mike.johnson@example.com",
+      "address": "789 Pine St",
+      "city": "Chicago",
+      "zipcode": "60601",
+      "avatar": "https://i.pravatar.cc/300?img=3",
+      "birthday": "1978-11-03",
+      "first_seen": "2023-03-10T11:20:00Z",
+      "last_seen": "2024-01-05T13:30:00Z",
+      "has_ordered": true,
+      "latest_purchase": "2024-01-05T13:30:00Z",
+      "has_newsletter": true,
+      "groups": ["VIP"],
+      "nb_commands": 15,
+      "total_spent": 2100.75
+    }
+  ],
+  "commands": [
+    {
+      "id": 1,
+      "reference": "CMD-001",
+      "date": "2024-01-10T14:22:00Z",
+      "customer_id": 1,
+      "basket": [
+        {
+          "product_id": 1,
+          "quantity": 2
+        },
+        {
+          "product_id": 4,
+          "quantity": 1
+        }
+      ],
+      "total_ex_taxes": 146.97,
+      "delivery_fees": 5.99,
+      "tax_rate": 0.08,
+      "taxes": 12.24,
+      "total": 165.20,
+      "status": "delivered",
+      "returned": false
+    },
+    {
+      "id": 2,
+      "reference": "CMD-002",
+      "date": "2024-01-08T16:45:00Z",
+      "customer_id": 2,
+      "basket": [
+        {
+          "product_id": 2,
+          "quantity": 1
+        },
+        {
+          "product_id": 5,
+          "quantity": 3
+        }
+      ],
+      "total_ex_taxes": 89.96,
+      "delivery_fees": 5.99,
+      "tax_rate": 0.08,
+      "taxes": 7.68,
+      "total": 103.63,
+      "status": "delivered",
+      "returned": false
+    },
+    {
+      "id": 3,
+      "reference": "CMD-003",
+      "date": "2024-01-05T13:30:00Z",
+      "customer_id": 3,
+      "basket": [
+        {
+          "product_id": 3,
+          "quantity": 1
+        }
+      ],
+      "total_ex_taxes": 449.99,
+      "delivery_fees": 0.00,
+      "tax_rate": 0.08,
+      "taxes": 36.00,
+      "total": 485.99,
+      "status": "delivered",
+      "returned": false
+    },
+    {
+      "id": 4,
+      "reference": "CMD-004",
+      "date": "2024-01-15T10:15:00Z",
+      "customer_id": 1,
+      "basket": [
+        {
+          "product_id": 6,
+          "quantity": 2
+        }
+      ],
+      "total_ex_taxes": 159.98,
+      "delivery_fees": 5.99,
+      "tax_rate": 0.08,
+      "taxes": 13.28,
+      "total": 179.25,
+      "status": "ordered",
+      "returned": false
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "reference": "CAY-001",
+      "category_id": 1,
+      "name": "Caymus Cabernet Sauvignon 2021",
+      "description": "Rich, full-bodied Cabernet with notes of blackberry and vanilla",
+      "image": "https://i.ibb.co/QCx3C7W/caymus-cabernet.jpg",
+      "thumbnail": "https://i.ibb.co/QCx3C7W/caymus-cabernet.jpg",
+      "price": 89.99,
+      "stock": 50,
+      "sales": 45,
+      "width": 7.5,
+      "height": 30,
+      "depth": 7.5,
+      "weight": 1200
+    },
+    {
+      "id": 2,
+      "reference": "KEN-002",
+      "category_id": 1,
+      "name": "Kendall-Jackson Vintner's Reserve Chardonnay",
+      "description": "Crisp, elegant Chardonnay with tropical fruit flavors",
+      "image": "https://i.ibb.co/2P3k4Xh/kendall-jackson-chardonnay.jpg",
+      "thumbnail": "https://i.ibb.co/2P3k4Xh/kendall-jackson-chardonnay.jpg",
+      "price": 24.99,
+      "stock": 75,
+      "sales": 123,
+      "width": 7.5,
+      "height": 30,
+      "depth": 7.5,
+      "weight": 1200
+    },
+    {
+      "id": 3,
+      "reference": "OPU-003",
+      "category_id": 1,
+      "name": "Opus One 2019",
+      "description": "Bordeaux-style blend from Napa Valley",
+      "image": "https://i.ibb.co/9y7K3Rh/opus-one.jpg",
+      "thumbnail": "https://i.ibb.co/9y7K3Rh/opus-one.jpg",
+      "price": 449.99,
+      "stock": 12,
+      "sales": 8,
+      "width": 7.5,
+      "height": 30,
+      "depth": 7.5,
+      "weight": 1200
+    },
+    {
+      "id": 4,
+      "reference": "MOD-004",
+      "category_id": 2,
+      "name": "Modelo Especial",
+      "description": "Crisp, light Mexican lager with a smooth finish",
+      "image": "https://i.ibb.co/H7XcK8J/modelo-especial.jpg",
+      "thumbnail": "https://i.ibb.co/H7XcK8J/modelo-especial.jpg",
+      "price": 28.49,
+      "stock": 200,
+      "sales": 450,
+      "width": 10,
+      "height": 15,
+      "depth": 20,
+      "weight": 8000
+    },
+    {
+      "id": 5,
+      "reference": "BUD-005",
+      "category_id": 2,
+      "name": "Budweiser",
+      "description": "Classic American lager beer",
+      "image": "https://i.ibb.co/ZMpVqJK/budweiser.jpg",
+      "thumbnail": "https://i.ibb.co/ZMpVqJK/budweiser.jpg",
+      "price": 22.99,
+      "stock": 300,
+      "sales": 650,
+      "width": 10,
+      "height": 15,
+      "depth": 20,
+      "weight": 8000
+    },
+    {
+      "id": 6,
+      "reference": "GRE-006",
+      "category_id": 3,
+      "name": "Grey Goose Vodka",
+      "description": "Premium French vodka with smooth finish",
+      "image": "https://i.ibb.co/QjBvK8K/grey-goose.jpg",
+      "thumbnail": "https://i.ibb.co/QjBvK8K/grey-goose.jpg",
+      "price": 79.99,
+      "stock": 85,
+      "sales": 89,
+      "width": 9,
+      "height": 32,
+      "depth": 9,
+      "weight": 1500
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Wine",
+      "description": "Premium wines from around the world"
+    },
+    {
+      "id": 2,
+      "name": "Beer",
+      "description": "Craft and domestic beers"
+    },
+    {
+      "id": 3,
+      "name": "Spirits",
+      "description": "Premium spirits and liquors"
+    },
+    {
+      "id": 4,
+      "name": "Champagne",
+      "description": "Sparkling wines and champagnes"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "date": "2024-01-10T14:22:00Z",
+      "status": "approved",
+      "command_id": 1,
+      "product_id": 1,
+      "customer_id": 1,
+      "rating": 5,
+      "comment": "Excellent wine, very smooth and rich flavor!"
+    },
+    {
+      "id": 2,
+      "date": "2024-01-08T16:45:00Z",
+      "status": "approved",
+      "command_id": 2,
+      "product_id": 2,
+      "customer_id": 2,
+      "rating": 4,
+      "comment": "Good chardonnay, crisp and refreshing."
+    },
+    {
+      "id": 3,
+      "date": "2024-01-05T13:30:00Z",
+      "status": "approved",
+      "command_id": 3,
+      "product_id": 3,
+      "customer_id": 3,
+      "rating": 5,
+      "comment": "Worth every penny! Exceptional quality."
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "date": "2024-01-10T14:22:00Z",
+      "command_id": 1,
+      "customer_id": 1,
+      "total_ex_taxes": 146.97,
+      "delivery_fees": 5.99,
+      "tax_rate": 0.08,
+      "taxes": 12.24,
+      "total": 165.20
+    },
+    {
+      "id": 2,
+      "date": "2024-01-08T16:45:00Z",
+      "command_id": 2,
+      "customer_id": 2,
+      "total_ex_taxes": 89.96,
+      "delivery_fees": 5.99,
+      "tax_rate": 0.08,
+      "taxes": 7.68,
+      "total": 103.63
+    },
+    {
+      "id": 3,
+      "date": "2024-01-05T13:30:00Z",
+      "command_id": 3,
+      "customer_id": 3,
+      "total_ex_taxes": 449.99,
+      "delivery_fees": 0.00,
+      "tax_rate": 0.08,
+      "taxes": 36.00,
+      "total": 485.99
+    }
+  ]
+}
